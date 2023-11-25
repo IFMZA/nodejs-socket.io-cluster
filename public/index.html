@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socket.io simple chat</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div>
+            <input type="text" placeholder="Enter Username" id="username" />
+            <button onclick="connectToSocket()">Connect</button>
+        </div>
+        <div>
+            <button onclick="sendPostToSocket()">Send Post</button>
+        </div>
+
+        <form class="message_form">
+            <input type="text" class="message_form__input" placeholder="Type a message" />
+            <button class="message_form__button" type="submit">
+                Enter
+            </button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

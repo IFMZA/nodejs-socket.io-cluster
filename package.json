@@ -1,0 +1,32 @@
+{
+  "name": "socket_io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js",
+    "dev-cluster": "nodemon ./cluster.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "socket.io",
+    "socket cluster",
+    "NodeJs",
+    "realtime"
+  ],
+  "author": "Islam Farid",
+  "license": "ISC",
+  "dependencies": {
+    "@socket.io/cluster-adapter": "^0.2.0",
+    "@socket.io/sticky": "^1.0.1",
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "jwt-decode": "^3.1.2",
+    "recluster": "^1.0.0",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
